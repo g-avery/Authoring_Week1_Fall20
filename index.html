@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Working with SASS</title>
+    <title>Working with SASS and Modules</title>
 
-    <!-- never link your sass files (.scss) - those are working files only -->
-    <link rel="stylesheet" href="css/main.css">
+    <!-- this has to be a css file -->
+    <link rel="stylesheet" href="css/master.css">
 </head>
+
 <body>
     <main id="app">
         <h1 class="hidden">Welcome to my awesome app</h1>
 
+        <!-- this is an HTML component -->
         <nav class="main-nav">
             <li>
-                <a href="" class="list-item">list 1</a>
+                <a href="#" class="nav-item">item 1</a>
             </li>
-            <li><a href="" class="list-item">list 2</a></li>
-            <li><a href="" class="list-item">list 3</a></li>
-            <li><a href="" class="list-item">list 4</a></li>
-        </nav>
 
-        <footer>
-            <p>this is my footer</p>
-        </footer>
+            <li><a href="#" class="nav-item">item 2</a></li>
+            <li><a href="#" class="nav-item">item 3</a></li>
+            <li><a href="#" class="nav-item">item 4</a></li>
+            <li><a href="#" class="nav-item">item 5</a></li>
+        </nav>
+        <!-- end component -->
     </main>
 
-    <script src="js/main.js" type="module"></script>
+    <footer>this is a simple footer</footer>
+
+    <!-- script files always go here -->
+    <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

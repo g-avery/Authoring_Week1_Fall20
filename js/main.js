@@ -1,6 +1,9 @@
-// import JS files (just like SASS)
-import TheData from "modules/DataModule,js";
+// import your packages here
+import Person from "./modules/DataModule.js";
 
 (() => {
-    // this is a module file
-})
+    // stub * just a place for non-component-specific stuff
+    console.log('loaded');
+
+    console.log(Person);
+})();
